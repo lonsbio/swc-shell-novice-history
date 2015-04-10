@@ -1,0 +1,310 @@
+  539  echo "Challenge #2 - open up a shell!"
+  540  whoami
+  541  pwd
+  542  ls
+  543  ls
+  544  cd users/
+  545  pwd
+  546  ls
+  547  cd nelle/
+  548  ls
+  549  ls -F
+  550  cd north-pacifci-gryee
+  551  cd north-pacific-gyre/
+  552  pwd
+  553  ls
+  554  cd 2012-07-03/
+  555  ls
+  556  cd /Users/lonsbio/Desktop/shell-novice-files/users/nelle/
+  557  ls
+  558  cd north-pacific-gyre/
+  559  ls
+  560  cd 2012-07-03/
+  561  ls
+  562  cd ..
+  563  pwd
+  564  cd ..
+  565  pwd
+  566  cd ..
+  567  pwd
+  568  cd ..
+  569  pwd
+  570  ls
+  571  cd users/nelle/north-pacific-gyre/
+  572  pwd
+  573  clear
+  574  ls -l
+  575  ls
+  576  cd ..
+  577  ls
+  578  clear
+  579  pwd
+  580  cd ..
+  581  cd ..
+  582  pwd
+  583  cd ..
+  584  ls
+  585  clear
+  586  ls
+  587  clear
+  588  pwd
+  589  mkdir swc_workshop
+  590  ls
+  591  clear
+  592  cd swc_workshop/
+  593  pwd
+  594  ls
+  595  git clone https://github.com/COMBINE-Australia/shell-novice-files
+  596  ls
+  597  cd shell-novice-files/
+  598  ls
+  599  clear
+  600  ls -l
+  601  clrar
+  602  clear
+  603  ls
+  604  clear
+  605  pwd
+  606  cd ..
+  607  ls
+  608  cd shell-novice-files/
+  609  pwd
+  610  ls
+  611  cd users/nelle/
+  612  ls
+  613  clear
+  614  ls
+  615  mkdir thesis
+  616  ls -F
+  617  ls -F thesis/
+  618  ls -F
+  619  ls -F .
+  620  ls -F ..
+  621  ls
+  622  cd thesis/
+  623  ls
+  624  touch draft.txt
+  625  ls
+  626  nano draft.txt
+  627  ls
+  628  rm draft.txt
+  629  ls
+  630  clear
+  631  pwd
+  632  nano draft.txt
+  633  ls
+  634  cd ..
+  635  ls
+  636  rm thesis/
+  637  rmdir thesis/
+  638  rm thesis/draft.txt
+  639  rmdir thesis/
+  640  ls
+  641  mkdir thesis
+  642  nano thesis/draft.txt
+  643  ls -F thesis/
+  644  cd thesis/
+  645  ls
+  646  clear
+  647  ls -l
+  648  mv draft.txt quotes.txt
+  649  ls
+  650  pwd
+  651  clear
+  652  ls -l
+  653  clear
+  654  ls
+  655  cd ..
+  656  ls
+  657  ls -F thesis/
+  658  pwd
+  659  ls
+  660  ls -F thesis/
+  661  mv thesis/quotes.txt .
+  662  ls
+  663  ls -F thesis/
+  664  clear
+  665  ls
+  666  cd molecules/
+  667  clear
+  668  ls
+  669  cat cubane.pdb
+  670  nano cubane.pdb
+  671  cat cubane.pdb
+  672  ls
+  673  wc cubane.pdb
+  674  wc -l cubane.pdb
+  675  ls
+  676  wc -l ethane.pdb
+  677  wc -l octane.pdb
+  678  wc -l *.pdb
+  679  wc -l cubane.pdb ethane.pdb methane.pdb octane.pdb pentane.pdb  propane.pdb
+  680* wc -l *.pdb
+  681  ls
+  682  cd ..
+  683  ls
+  684  wc -l molecules/*.pdb
+  685  wc -l molecules/*.pdb > lengths.txt
+  686  ls
+  687  cat lengths.txt
+  688  sort lengths.txt
+  689  sort -n lengths.txt
+  690  head lengths.txt
+  691  sort -n lengths.txt
+  692  sort -n lengths.txt > lengths-sorted.txt
+  693  cat lengths-sorted.txt
+  694  head lengths-sorted.txt
+  695  head -2 lengths-sorted.txt
+  696  head -1 lengths-sorted.txt
+  697  clear
+  698  ls
+  699  cd molecules/
+  700  ls
+  701  wc -l *.pdb | sort
+  702  wc -l *.pdb | sort -n | head -1
+  703  wc -l *.pdb | sort -n | tee intermediate.txt |head -1
+  704  ls
+  705  cat intermediate.txt
+  706  wc -l *.pdb | sort -n | head -1
+  707  clear
+  708  wc -l *.pdb | sort -n | head -1
+  709  clear
+  710  ls
+  711  clear
+  712  wc -l *.pdb | sort -n | head -1
+  713  clear
+  714  wc -l *.pdb | sort -n | head -1
+  715  wc -l *.pdb | sort -n | head -1
+  716  wc -l *.pdb | sort -n | head -1 > shortest-molecule.txt
+  717  cat shortest-molecule.txt
+  718  clear
+  719  wc -l *.pdb | sort -n | head -1
+  720  wc -l *.pdb
+  721  sort -n
+  722  sort -n ../lengths.txt
+  723  clear
+  724  ls -l
+  725  clear
+  726  ls
+  727  cd ..
+  728  ls
+  729  pwd
+  730  ls
+  731  cd north-pacific-gyre/
+  732  ls
+  733  cd 2012-07-03/
+  734  ls
+  735  wc -l *.txt
+  736  wc -l *.txt | sort -n| head -5
+  737  wc -l *.txt | sort -n| tail -5
+  738  pwd
+  739  clear
+  740  wc -l *.txt | sort -n| tail -5
+  741  ls *Z.txt
+  742  ls *[AB].txt
+  743  wc -l *[AB].txt| sort -n |head -5
+  744  wc -l *[AB].txt| sort -n |tail -5
+  745  mv NENE02018B.txt NENE02018Z.txt
+  746  wc -l *[AB].txt| sort -n |head -5
+  747  wc -l *[AB].txt| sort -n |tail -5
+  748  < ../../lengths.txt echo
+  749  wc -l
+  750  wc -l < ../../lengths.txt
+  751  wc -l ../../lengths.txt
+  752  wc -l < ../../lengths.txt
+  753  cat ../../lengths.txt
+  754  cat ../../lengths.txt | wc -l
+  755  wc -l < ../../lengths.txt
+  756  clear
+  757  ls -l
+  758  clear
+  759  pwd
+  760  cd ..
+  761  cd ..
+  762  pwd
+  763  cd molecules/
+  764  ls
+  765  clear
+  766  ls
+  767  rm intermediate.txt shortest-molecule.txt
+  768  ls
+  769  clear
+  770  ls -l
+  771  clear
+  772  ls
+  773  nano middle.sh
+  774  ls
+  775  cat middle.sh
+  776  bash middle.sh
+  777  head -15 octane.pdb |tail -5
+  778  bash middle.sh
+  779  ls
+  780  ls -F .
+  781  ls -F ../
+  782  clear
+  783  ls -l
+  784  clear
+  785  ls
+  786  nano middle.sh
+  787  bash middle.sh
+  788  bash middle.sh octane.pdb
+  789  nano middle.sh
+  790  bash middle.sh propane.pdb
+  791  bash middle.sh propane.pdb ethane.pdb
+  792  bash middle.sh propane.pdb
+  793  clear
+  794  bash middle.sh propane.pdb ethane.pdb
+  795  nano  middle.sh
+  796  bash middle.sh propane.pdb ethane.pdb
+  797  nano middle.sh
+  798  bash middle.sh propane.pdb
+  799  nano middle.sh ls
+  800  nano middle.sh
+  801  nano middle.sh propane.pdb 15 5
+  802  bash middle.sh propane.pdb 15 5
+  803  head 15 octane.pdb
+  804  bash middle.sh propane.pdb "-15" "-5"
+  805  bash middle.sh propane.pdb "-12" "-5"
+  806  nano middle.sh
+  807  bash middle.sh propane.pdb "-12" "-5"
+  810  pwd
+  811  cd ..
+  812  ls
+  813  clear
+  814  ls -l
+  815  clear
+  816  ls
+  817  cd creatures/
+  818  ls
+  819  clear
+  820  ls -l
+  821  ls
+  822  pwd
+  823  clear
+  824  pwd
+  825  ls
+  826  mv *.dat original-*.dat
+  827  for filname in unicorn.dat basilisk.dat ; do head -3 $filname ; done
+  828  cat basilisk.dat
+  829  head -n 3 basilisk.dat
+  830  head -n 3 unicorn.dat
+  831  for filname in unicorn.dat basilisk.dat ; do head -3 $filname ; done
+  832  for filname in *.dat ; do head -3 $filname ; done
+  833  nano topthree.sh
+  834  bash topthree.sh
+  835  nano topthree.sh
+  836  bash topthree.sh 3
+  837  bash topthree.sh 2
+  838  bash topthree.sh 1
+  839  mv topthree.sh toplines.sh
+  840  nano toplines.sh
+  841  nano toplines.sh
+  842  pwd
+  843  cd ..
+  844  cd ..
+  845  ls
+  846  cd ..
+  847  ls
+  848  history y
+  849  history
+  850  history > swc_unix_shell.history.txt
